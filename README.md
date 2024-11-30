@@ -1,13 +1,13 @@
 # s3_list_app
 ## A Flask app to list the contents of a S3 bucket.
-GET /list-bucket-content/: Returns the top-level content of the S3 bucket.
-GET /list-bucket-content/<path>: Returns the contents of a specific path.
-If the path does not exist, it returns a Non-existing path message.
+GET /list-bucket-content/: Returns the top-level content of the S3 bucket.\n
+GET /list-bucket-content/<path>: Returns the contents of a specific path.\n
+If the path does not exist, it returns a Non-existing path message.\n
 
 ## Assumption 
-Code will use the Role of the server to get the permission of S3 bucket.
-OR
-Code will use the already configured aws credentials (default) in (~/.aws/credentials).
+Code will use the Role of the server to get the permission of S3 bucket.\n
+OR\n
+Code will use the already configured aws credentials (default) in (~/.aws/credentials).\n
 
 ## Requirements
 Boto3
